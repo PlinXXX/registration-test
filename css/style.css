@@ -292,6 +292,7 @@ input[type="reset"],
     height: auto;
     background: #FF8103;
     outline: none;
+    margin: 2% 0 0 0;
 }
 
 .simple-form-button:hover {
@@ -461,10 +462,7 @@ label.agileits_label {
 }
 
 /*-- start-responsive-design --*/
-@media (min-width: 992px) {
-    .textarea {
-        width: 72% !important;
-    }
+@media (min-width: 992px) 
     .user_status {
         /*border: 1px solid red;*/
     }
@@ -475,7 +473,7 @@ label.agileits_label {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
         
-        margin: 0% 10%;
+        margin: 0% 5%;
         display: initial !important;
     }
 
@@ -492,9 +490,10 @@ label.agileits_label {
     }
 }
 
-@media (max-width:991px) {
-    .textarea {
-        width: 72% !important;
+@media (min-width: 668px) and (max-width:991px) {
+    
+    textarea {
+        width: 75% !important;
     }
     .main h1 {
         margin-bottom: 1.5em;
@@ -505,9 +504,10 @@ label.agileits_label {
     }
 }
 
-@media (max-width:667px) {}
+@media (min-width: 601px) and (max-width:667px) {
+}
 
-@media (max-width: 600px) {
+@media (min-width: 569px) and (max-width: 600px) {
     .main h1 {
         margin-bottom: 1.3em;
         font-size: 2.3em;
@@ -526,7 +526,7 @@ label.agileits_label {
     }
 }
 
-@media (max-width: 568px) {
+@media (min-width: 481px) and (max-width: 568px) {
     .main h1 {
         margin-bottom: 1em;
         font-size: 2.1em;
@@ -537,13 +537,13 @@ label.agileits_label {
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 415px) and (max-width: 480px) {
     #wrapper {
         width: 415px;
     }
 }
 
-@media (max-width: 414px) {
+@media (min-width: 385px) and (max-width: 414px) {
     .main h1 {
         /*-- w3layouts --*/
         font-size: 1.8em;
@@ -554,19 +554,34 @@ label.agileits_label {
     }
 }
 
-@media (max-width: 384px) {
+@media (min-width: 376px) and (max-width: 384px) {
     .main h1 {
         font-size: 1.7em;
     }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 375px) {
     .simple-form-button {
         margin: 1em 0.2em;
     }
 }
-
+@media (min-width: 321px) {
+    textarea {
+        width: 72% !important;
+    }
+}
 @media (max-width: 320px) {
+    .user_status span.third {
+        display: inherit !important; 
+    }
+    .user_status span.third input {
+         width: 16% !important; 
+    }
+    .user_status span.third label {
+        margin: 0;
+        display: inline-flex;
+        width: 78%;
+    }
     textarea {
         width: 100% !important;
     }
