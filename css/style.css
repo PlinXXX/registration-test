@@ -437,7 +437,6 @@ textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    width: 72% !important;
 }
 
 label.error,
@@ -463,6 +462,9 @@ label.agileits_label {
 
 /*-- start-responsive-design --*/
 @media (min-width: 992px) {
+    .textarea {
+        width: 72% !important;
+    }
     .user_status {
         /*border: 1px solid red;*/
     }
@@ -491,6 +493,9 @@ label.agileits_label {
 }
 
 @media (max-width:991px) {
+    .textarea {
+        width: 72% !important;
+    }
     .main h1 {
         margin-bottom: 1.5em;
     }
@@ -562,6 +567,10 @@ label.agileits_label {
 }
 
 @media (max-width: 320px) {
+    textarea {
+        width: 100% !important;
+    }
+
     #wrapper {
         width: 275px;
     }
